@@ -40,12 +40,12 @@ def forwardAndTurnToRight(side):
 def countExteriorAngle(numberOfSides):
     return 360/numberOfSides
 
-def routeZ(ali):
-    ali.fd(100)
-    ali.rt(135)
-    ali.fd(int(100 * math.sqrt(2)))
-    ali.lt(135)
-    ali.fd(100)
+def routeZ(z):
+    z.fd(100)
+    z.rt(135)
+    z.fd(int(100 * math.sqrt(2)))
+    z.lt(135)
+    z.fd(100)
 
 
 routeArc(130, 180+90)
