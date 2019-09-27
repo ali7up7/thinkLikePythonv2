@@ -1,7 +1,7 @@
 import turtle
 import math
 
-line = turtle.Turtle()
+t = turtle.Turtle()
 numberOfSides= 60
 
 
@@ -33,9 +33,9 @@ def routePolygon(side, numberOfSidesToDraw):
 
 
 def forwardAndTurnToRight(side):
-    line.fd(side)
+    t.fd(side)
     exteriorAngle = countExteriorAngle(numberOfSides)
-    line.rt(exteriorAngle)
+    t.rt(exteriorAngle)
 
 def countExteriorAngle(numberOfSides):
     return 360/numberOfSides
@@ -48,7 +48,6 @@ def routeZ(z):
     z.fd(100)
 
 
-routeArc(130, 180+90)
-turtle.mainloop()
+
 
 
